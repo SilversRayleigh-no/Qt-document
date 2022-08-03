@@ -1,0 +1,4 @@
+Q_DECLARE_METATYPE sẽ cho kiểu của mình được biết đến với QMetaType miễn là có public default constructor, public copy constructor, public destructor -> muốn sử dụng kiểu type trong QVarient thì thằng này là đủ
+còn muốn sử dụng nó với signal slot thì cần thêm qRegisterMetaType() -> phải được gọi trước khi thiết lập kết nối signal slot
+để dùng qRegisterMetaType thì kiểu phải được khai báo với Q_DECLARE_METATYPE trước
+
